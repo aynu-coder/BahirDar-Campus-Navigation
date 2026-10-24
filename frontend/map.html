@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahir Dar University Campus Navigator | Route Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-map" data-page="map">
+  <div class="map-shell">
+    <div id="map" aria-label="Campus route map"></div>
+
+    <aside class="map-panel" aria-live="polite">
+      <div class="panel-header">
+        <div>
+          <p class="eyebrow">Route overview</p>
+          <h2>Campus navigation</h2>
+        </div>
+        <button id="backBtn" class="secondary-btn" type="button">Back to Search</button>
+      </div>
+
+      <div id="routeSummary" class="route-summary">
+        Loading route...
+      </div>
+
+      <div class="distance-card">
+        <span>Route distance</span>
+        <strong id="distanceValue">--</strong>
+      </div>
+
+      <div class="route-meta">
+        <div>
+          <span>Start</span>
+          <strong id="startLabel">-</strong>
+        </div>
+        <div>
+          <span>Destination</span>
+          <strong id="destinationLabel">-</strong>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

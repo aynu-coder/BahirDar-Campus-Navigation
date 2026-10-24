@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bahir Dar University Campus Navigator</title>
+  <meta name="description" content="Modern campus route planner for Bahir Dar University." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="page-landing" data-page="landing">
+  <header class="landing-header">
+    <div class="brand-wrap">
+      <div class="brand-mark">BDU</div>
+      <span class="brand-name">Bahir Dar University</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Campus navigation made simple</p>
+        <h1>Bahir Dar University Campus Navigator</h1>
+        <p class="subtitle">Find your way around campus, one route at a time.</p>
+        <div class="hero-actions">
+          <button id="heroRouteBtn" class="primary-btn" type="button">Find Your Route</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="route-search" class="search-section">
+      <div class="search-card">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Plan your route</p>
+            <h2>Find a destination</h2>
+          </div>
+        </div>
+
+        <form id="routeForm" class="route-form">
+          <div class="form-grid">
+            <div class="field-group">
+              <label for="startInput">Starting point</label>
+              <input id="startInput" name="start" type="text" placeholder="Enter your starting location" />
+            </div>
+
+            <div class="field-group">
+              <label for="destinationInput">Destination</label>
+              <input id="destinationInput" name="destination" type="text" placeholder="Enter a destination" required />
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button id="locateBtn" class="secondary-btn" type="button">Use My Location</button>
+            <button id="searchBtn" class="primary-btn" type="submit">View Route</button>
+          </div>
+          <p id="locationStatus" class="location-status">Your location is not set yet.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
